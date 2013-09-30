@@ -1,4 +1,4 @@
-*jQuery-Gallery*
+# jQuery-Gallery
 
 Simple gallery.
 
