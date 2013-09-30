@@ -1,0 +1,3 @@
+*jQuery-Gallery*
+
+Simple gallery.
