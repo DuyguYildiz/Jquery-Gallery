@@ -48,12 +48,13 @@ select { padding: 0; }
 /* end of reset css */
 
 
-
+body{	
+	background: #000;
+}
 .gallery-holder{
 	width: 580px;
 	height: 300px;
 	position:relative;
-	overflow: hidden;
 }
 .gallery-content{
 	width:500px;
@@ -70,7 +71,7 @@ select { padding: 0; }
 	list-style: none;
 	position:relative;
 	float: left;
-	display: inline-block;
+	display: none;
 	background: #000;
 }
 .gallery-holder ul li img{
@@ -132,6 +133,7 @@ select { padding: 0; }
 	display: inline-block;
 	background: #000;
 	margin: 0 5px;
+	cursor:pointer;
 }
 .gallery-thumb-holder ul li img{
 	width: 100%;

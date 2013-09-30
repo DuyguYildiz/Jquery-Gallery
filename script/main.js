@@ -32,10 +32,14 @@ $(document).ready(function(){
 		var sliderIndex = this.sliderIndex;
 
 		var anim = "fade";
+		if(anim == "slide")
+			$('.gallery-holder ul li').css('display','inline-block');
+			
 		cLeftBtn.css('top', ($('.gallery-content').height() - cLeftBtn.height()) / 2);
 		cRightBtn.css('top', ($('.gallery-content').height() - cRightBtn.height()) / 2);
 		sLeftBtn.css('top', ($('.gallery-thumb-content').height() - sLeftBtn.height()) / 2);
 		sRightBtn.css('top', ($('.gallery-thumb-content').height() - sRightBtn.height()) / 2);
+		
 		
         sliderItem.unbind('mouseenter').bind('mouseenter', function () {
             sliderItem.removeClass('hover');
@@ -56,8 +60,9 @@ $(document).ready(function(){
 			if(anim == "fade"){
 				if (activeItem)
            			activeItem.fadeOut();       
-
+				console.log('old: ', activeItem);
             	activeItem = $(galleryItem[_index]);
+				console.log('new: ', _index, activeItem);
             	activeItem.fadeIn(250);
 			}
 			else if(anim == "slide"){
